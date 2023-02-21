@@ -31,7 +31,7 @@ body{
 
 
 
-.Student-form {
+.form {
   position: relative;
   max-width: 1100px;
   max-height: 700px;
@@ -44,7 +44,7 @@ body{
   background-color: var(--dash-card-light);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
-.Student-form form .fields {
+.form form .fields {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -52,19 +52,19 @@ body{
   margin: 5px 5px 5px 5px;
 }
 
-.Student-form form .fields .input-field {
+.form form .fields .input-field {
   display: flex;
   width: calc(100% / 3 - 15px);
   flex-direction: column;
   margin: 4px 0;
   background: var(--dash-card-light);
 }
-.Student-form .input-field label {
+.form .input-field label {
   font-size: 15px;
   font-weight: 500;
   color: var(--text-light);
 }
-.Student-form .input-field input,
+.form .input-field input , 
 select {
   outline: none;
   font-size: 14px;
@@ -76,12 +76,16 @@ select {
   height: 42px;
   margin: 8px 0;
 }
+textarea{
+  border-radius: 5px;
+  border: 1px solid #faaf43;
+}
 
-.Student-form .btnText {
+.form .btnText {
   font-size: 14px;
   font-weight: 400;
 }
-.Student-form .buttons .submit {
+.form .buttons .submit {
   display: flex;
   align-items: center;
 }
@@ -89,7 +93,7 @@ select {
   margin: 0 6px;
   font-size: 20px;
 }
-.Student-form form button {
+.form form button {
   display: flex;
   align-items: center;
   justify-content: center;

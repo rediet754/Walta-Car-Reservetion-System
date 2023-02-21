@@ -16,17 +16,21 @@
  </head>
  <body>
   
-    <div class="Student-form">
+    <div class="form">
               <!-- container -->
               <h2>የተሽከርካሪዎች ስምሪት/ፍላጎት/ መጠየቂያ ፎርም</h2>
               <form action="./server/addStudents.php" method="post">
-                <div class="formFirst">
-                  <!-- first form container-->
+             
+               
                   <div class="personalDetails">
                     <!-- personal details conatiner -->
                     <p class="title " id="p"></p>
                     <div class="fields">
                       <!--  fields for personal details-->
+                      <div class="input-field">
+                        <label>የጠያቂ ሰራተኛ ስም</label>
+                        <input type="text" name="Lname" required />
+                      </div>
                       <div class="input-field">
                         <label>ቡክ የተደረገበት ቀን </label>
                         <input type="date" id="bookingdate" required readonly  />
@@ -63,6 +67,10 @@
                       <div class="input-field">
                         <label>የተጓዥ ብዛት</label>
                         <input type="number"  name="Lname" required />
+                      </div>
+                      <div class="input-field">
+                        <label>የተጓዥ ስም ዝርዝር </label>
+                        <textarea name="passengers" id="passengers" cols="30" rows="10"></textarea>
                       </div>
                       <div class="input-field">
                        
